@@ -70,7 +70,7 @@
         </div>
 
         <!-- card list-Sales -->
-        <section class="container " id="listsales">
+        <section class="container active" id="listsales">
             <div class="card">
                 <div class="card-header">
                     <span>ลำดับการสั่งซื้อ</sp>
@@ -450,17 +450,21 @@
                     </div>
 
                     <!-- catalog-menu -->
-                    <ul class="catalog-menu">
-                        <li><a href="#">ทั้งหมด</a></li>
-                        <li><a href="#">อาหารสำเร็จรูป</a></li>
-                        <li><a href="#">ขนทขบเคี้ยว</a></li>
-                        <li><a href="#">ขนมปัง</a></li>
-                        <li><a href="#">เครื่องดื่ม</a></li>
+                    <ul class="filter-option">
+                        <li class="filtermode active">
+                            <a href="#all">ทั้งหมด</a></li>
+                        <li class="filtermode">
+                            <a href="#dryfood">อาหารสำเร็จรูป</a></li>
+                        <li class="filtermode">
+                            <a href="#snack">ขนทขบเคี้ยว</a></li>
+                        <li class="filtermode">
+                            <a href="#bread">ขนมปัง</a></li>
+                        <li class="filtermode">
+                            <a href="#beverage">เครื่องดื่ม</a></li>
                     </ul>
-
                     <!-- card product in catalog -->
                     <div class="row-card-pd">
-                        <div class="card-pd">
+                        <div class="card-pd" id="dryfood">
                             <img src="https://fit-d.com/uploads/food/0c4f8c80326d4453d3bba5571543a6e1.jpeg"
                                 alt="img product" class="img-pd">
                             <div class="row-txt-pd">
@@ -474,7 +478,7 @@
                         </div>
 
                         <!-- card pd 02-->
-                        <div class="card-pd">
+                        <div class="card-pd" id="dryfood">
                             <img src="https://fit-d.com/uploads/food/0c4f8c80326d4453d3bba5571543a6e1.jpeg"
                                 alt="img product" class="img-pd">
                             <div class="row-txt-pd">
@@ -488,7 +492,7 @@
                         </div>
 
                         <!-- card pd 02-->
-                        <div class="card-pd">
+                        <div class="card-pd" id="snack">
                             <img src="https://fit-d.com/uploads/food/0c4f8c80326d4453d3bba5571543a6e1.jpeg"
                                 alt="img product" class="img-pd">
                             <div class="row-txt-pd">
@@ -502,7 +506,7 @@
                         </div>
 
                         <!-- card pd 03-->
-                        <div class="card-pd">
+                        <div class="card-pd" id="snack">
                             <img src="https://fit-d.com/uploads/food/0c4f8c80326d4453d3bba5571543a6e1.jpeg"
                                 alt="img product" class="img-pd">
                             <div class="row-txt-pd">
@@ -516,7 +520,7 @@
                         </div>
 
                         <!-- card pd 04-->
-                        <div class="card-pd">
+                        <div class="card-pd" id="snack">
                             <img src="https://fit-d.com/uploads/food/0c4f8c80326d4453d3bba5571543a6e1.jpeg"
                                 alt="img product" class="img-pd">
                             <div class="row-txt-pd">
@@ -530,7 +534,7 @@
                         </div>
 
                         <!-- card pd 05-->
-                        <div class="card-pd">
+                        <div class="card-pd" id="snack">
                             <img src="https://fit-d.com/uploads/food/0c4f8c80326d4453d3bba5571543a6e1.jpeg"
                                 alt="img product" class="img-pd">
                             <div class="row-txt-pd">
@@ -629,14 +633,15 @@
                                     alt="img edit ctl">
                                 <h3>อาหารสำเร็จรูป</h3>
                             </div>
-                            <div id="btnellipsis">
-                                <a href="#" class="btn-ellipsis"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
-                            </div>
-                            <div class="group-btn-edit" id="btneditctl">
-                                <a href="#" class="btn-angle-left"><i class="fa-solid fa-angle-left fa-lg"
-                                        style="color: rgb(0, 0, 0);"></i></a>
-                                <a href="#" class="btn-edit-card-ctl"><i class="fa-solid fa-pen fa-lg"></i></a>
-                                <a href="#" class="btn-delete edit"><i class="fa-solid fa-trash fa-lg"></i></a>
+                            <div class="btn-menu-ctl main">
+                                <div id="btnellipsis">
+                                    <a href="#" class="btn-ellipsis main"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
+                                </div>
+                                <div class="group-btn-edit" id="btneditctl">
+                                    <a href="#" class="btn-angle-left"><i class="fa-solid fa-angle-left fa-lg"></i></a>
+                                    <a href="#" class="btn-edit-card-ctl"><i class="fa-solid fa-pen fa-lg"></i></a>
+                                    <a href="#" class="btn-delete edit"><i class="fa-solid fa-trash fa-lg"></i></a>
+                                </div>
                             </div>
                         </div>
 
@@ -650,18 +655,15 @@
                                         <h3>อาหารสำเร็จรูป</h3>
                                     </div>
                                     <div class="btn-menu-ctl">
-                                        <a href="#" class="btn-ellipsis"><i
-                                                class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
-
-                                        <div class="group-btn-edit" id="btneditctl">
-                                            <a href="#" class="btn-angle-left"><i class="fa-solid fa-angle-left fa-lg"
-                                                    style="color: rgb(0, 0, 0);"></i></a>
-                                            <a href="#" class="btn-edit-card-ctl"><i
-                                                    class="fa-solid fa-pen fa-lg"></i></a>
-                                            <a href="#" class="btn-delete edit"><i
-                                                    class="fa-solid fa-trash fa-lg"></i></a>
-                                        </div>
-                                    </div>
+                                <div id="btnellipsis">
+                                    <a href="#" class="btn-ellipsis"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
+                                </div>
+                                <div class="group-btn-edit" id="btneditctl">
+                                    <a href="#" class="btn-angle-left"><i class="fa-solid fa-angle-left fa-lg"></i></a>
+                                    <a href="#" class="btn-edit-card-ctl"><i class="fa-solid fa-pen fa-lg"></i></a>
+                                    <a href="#" class="btn-delete edit"><i class="fa-solid fa-trash fa-lg"></i></a>
+                                </div>
+                            </div>
                                 </div>
                             </div>
                             <div class="card-edit-ctl">
@@ -671,16 +673,16 @@
                                             alt="img edit ctl">
                                         <h3>อาหารสำเร็จรูป</h3>
                                     </div>
-                                    <div id="btnellipsis">
-                                        <a href="" class="btn-ellipsis"><i
-                                                class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
-                                    </div>
-                                    <div class="group-btn-edit" id="btneditctl">
-                                        <a href="#" class="btn-angle-left"><i class="fa-solid fa-angle-left fa-lg"
-                                                style="color: rgb(0, 0, 0);"></i></a>
-                                        <a href="#" class="btn-edit-card-ctl"><i class="fa-solid fa-pen fa-lg"></i></a>
-                                        <a href="#" class="btn-delete edit"><i class="fa-solid fa-trash fa-lg"></i></a>
-                                    </div>
+                                    <div class="btn-menu-ctl">
+                                <div id="btnellipsis">
+                                    <a href="#" class="btn-ellipsis"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
+                                </div>
+                                <div class="group-btn-edit" id="btneditctl">
+                                    <a href="#" class="btn-angle-left"><i class="fa-solid fa-angle-left fa-lg"></i></a>
+                                    <a href="#" class="btn-edit-card-ctl"><i class="fa-solid fa-pen fa-lg"></i></a>
+                                    <a href="#" class="btn-delete edit"><i class="fa-solid fa-trash fa-lg"></i></a>
+                                </div>
+                            </div>
                                 </div>
                             </div>
                             <a href="" class="btn-cancle" id="btncancle"><i class="fa-solid fa-xmark fa-lg"></i></a>
@@ -722,10 +724,10 @@
                         <input type="password" class="input-profile" placeholder="ยืนยันรหัสผ่าน">
 
                         <div class="button-box">
-                            <button type="submit" class="save-btn">
+                            <button type="button" class="save-btn btn-cancle-profile">
                                 ยกเลิก
                             </button>
-                            <button type="submit" class="save-btn">
+                            <button type="button" class="save-btn">
                                 บันทึก
                             </button>
                         </div>
@@ -944,7 +946,7 @@
         </section>
 
         <!-- underconstruction -->
-        <section class="container active" id="building">
+        <section class="container" id="building">
             <div class="card">
                 <div class="card-header">
                     <h3>Unavailable</h3>
@@ -954,6 +956,112 @@
                     <span>This page is still under <br> construction and not manifested yet</span>
                     <span>Look for something else</span>
                 </div>
+            </div>
+        </section>
+
+        
+        <section class="container create-edit" id="create-edit">
+            <div class="card card-profile">
+                <div class="card-header">
+                    <span>ลำดับการสั่งซื้อ</sp>
+                </div>
+                <div class="concard">
+
+                    <div class="profile-top">
+                        <div class="profile-img">
+                            <img src="https://picfiles.alphacoders.com/621/thumb-1920-621078.jpeg">
+                        </div>
+
+                        <button class="upload-btn">อัพโหลดรูปภาพ</button>
+                    </div>
+
+                    <p class="profile-email">Example@gmail.com</p>
+
+                    <form class="form-profile">
+
+                        <label class="label-profile">ชื่อ</label>
+                        <input type="text" class="input-profile" placeholder="ชื่อ">
+
+                        <label class="label-profile">Email </label>
+                        <input type="email" class="input-profile" placeholder="Email">
+
+                        <label class="label-profile">รหัสผ่าน </label>
+                        <input type="password" class="input-profile" placeholder="รหัสผ่าน">
+
+                        <label class="label-profile">ยืนยันรหัสผ่าน (ยืนยันรหัสผ่านให้เหมือนกัน)</label>
+                        <input type="password" class="input-profile" placeholder="ยืนยันรหัสผ่าน">
+
+                        <div class="button-box">
+                            <button type="button" class="save-btn btn-cancle-member">
+                                ยกเลิก
+                            </button>
+                            <button type="button" class="save-btn">
+                                บันทึก
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="container admin-edit " id="admin-edit">
+            <div class="card card-profile">
+                <div class="card-header">
+                    <span>ลำดับการสั่งซื้อ</sp>
+                </div>
+                <div class="concard">
+
+                    <div class="profile-top">
+                        <div class="profile-img">
+                            <img src="https://picfiles.alphacoders.com/621/thumb-1920-621078.jpeg">
+                        </div>
+
+                        <button class="upload-btn">อัพโหลดรูปภาพ</button>
+                    </div>
+
+                    <p class="profile-email">Example@gmail.com</p>
+
+                    <form class="form-profile">
+
+                        <label class="label-profile">ชื่อ</label>
+                        <input type="text" class="input-profile" placeholder="ชื่อ">
+
+                        <label class="label-profile">Email </label>
+                        <input type="email" class="input-profile" placeholder="Email">
+
+                        <label label for="topic" class="form-label">Role</label>
+                        <select name="topic" id="topic" class="form-select">
+                            <option value="Selectrole">Selectrole</option>
+                            <option value="Web development">Web development</option>
+                            <option value="Mobile development">Mobile development</option>
+                            <option value="UX/UI Design">UX/UI Design</option>
+                            <option value="Ai">Ai</option>
+                            <option value="ไม่เลือก">ไม่เลือก</option>
+                        </select>
+
+                        <label class="label-profile">รหัสผ่าน </label>
+                        <input type="password" class="input-profile" placeholder="รหัสผ่าน">
+
+                        <label class="label-profile">ยืนยันรหัสผ่าน (ยืนยันรหัสผ่านให้เหมือนกัน)</label>
+                        <input type="password" class="input-profile" placeholder="ยืนยันรหัสผ่าน">
+
+                        <div class="button-box">
+                            <button type="button" class="save-btn btn-cancle-member">
+                                ยกเลิก
+                            </button>
+                            <button type="button" class="save-btn">
+                                บันทึก
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
             </div>
         </section>
     </div>

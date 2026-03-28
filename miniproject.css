@@ -384,6 +384,7 @@ tbody tr:hover {
     gap: 50px
 }
 
+
 .card-pd {
     background-color: rgb(255, 255, 255);
     padding: 20px;
@@ -478,7 +479,7 @@ tbody tr:hover {
     box-shadow: 0 4px 0 0 #1AAC23;
 }
 
-.catalog-menu {
+.filter-option {
     display: flex;
     padding: 32px 25px;
     justify-content: space-between;
@@ -493,7 +494,7 @@ tbody tr:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.catalog-menu li a {
+.filter-option li a {
     padding: 18px 20px;
 
     border-radius: 84px;
@@ -504,6 +505,10 @@ tbody tr:hover {
     font-weight: 600;
 }
 
+.filter-option li.active a {
+    background: #145680;
+    box-shadow: 0 4px 0 0 #0b2f46;
+}
 
 /*================================================================================================*/
 /* Card brand style*/
@@ -644,7 +649,7 @@ tbody tr:hover {
     color: rgb(255, 255, 255);
 }
 
-.card-edit-ctl.active .btn-ellipsis {
+.card-edit-ctl.active .btn-ellipsis.main {
     display: none;
 }
 
@@ -655,6 +660,14 @@ tbody tr:hover {
 }
 
 /*btn-ellipsis*/
+.btn-menu-ctl {
+    display: flex;
+    align-items: center;
+    transform: translateX(81%);
+    transition: 0.3s;
+    /* border: 1px solid #00ff37; */
+}
+
 .btn-ellipsis i {
     font-size: 2rem;
     margin-right: 60px;
@@ -662,9 +675,8 @@ tbody tr:hover {
 }
 
 /*group edit button*/
-.btn-ellipsis {
-    position: absolute;
-    right: 50px;
+.btn-ellipsis.active {
+    display: none;
 }
 
 .group-btn-edit {
@@ -673,8 +685,6 @@ tbody tr:hover {
     align-items: center;
     height: 55px;
     width: 210px;
-    transform: translateX(150%);
-    transition: 0.3s;
     margin-left: auto;
     /* border: 1px solid #00ff37; */
 }
@@ -682,6 +692,7 @@ tbody tr:hover {
 .btn-angle-left i {
     font-size: 3rem;
     padding: 55px 30px;
+    color: #000;
 }
 
 .btn-edit-card-ctl {
@@ -699,13 +710,12 @@ tbody tr:hover {
 }
 
 /*ปุ่มเปิด/ปิด หน้าสินค้า*/
-.group-btn-edit {
-    display: non;
+.btn-menu-ctl.close{
+    display: none;
 }
 
-.group-btn-edit.active {
-    display: flex;
-    transform: translateX(0%);
+.btn-menu-ctl.active {
+    transform: translateX(2%);
 }
 
 #editcatalog.active {
@@ -832,12 +842,20 @@ tbody tr:hover {
 .form-select {
     width: 100%;
     padding: 12px 15px;
+    margin-bottom: 10px;
     border-radius: 8px;
     border: 1px solid #444;
     background: #2a2a2a;
     color: #aaa;
 }
 
+#admin-edit.active {
+    display: block;
+}
+
+#create-edit.active {
+    display: block;
+}
 /* ============================= */
 /* MEMBER LIST */
 /* ============================= */
