@@ -1168,3 +1168,21 @@ tbody tr:hover {
     gap: 180px;
     margin-top: 30px;
 }
+
+/*================================================================================================*/
+/* underconstruction*/
+/*===============================================================================================*/
+.card-bg.building {
+    height: 1300px;
+    background: url(https://scontent.fbkk34-3.fna.fbcdn.net/v/t1.15752-9/655204423_1988480632102527_6863204874377885244_n.jpg?stp=dst-jpg_s526x395_tt6&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGkZX4RwKE6B5-YUT9gnakLqlVkytS2mu-qVWTK1Laa7zp8D-0Fox7nWdpEEmO-vMnn9QBBg4o5t7NAoJZD_FGG&_nc_ohc=Am1JCoQDkxMQ7kNvwExZZHJ&_nc_oc=AdptsNjvP_xgBjLaMgCw9z8rfIwt6vTIf4Uwx9uaEyTYZCR9ga2859TQCjXJGq5WOiU&_nc_zt=23&_nc_ht=scontent.fbkk34-3.fna&_nc_ss=7a32e&oh=03_Q7cD4wHUjEF8gnqE9nuxp7y0lMJTN2OzQ0LX-qgVZxvdE5k1ww&oe=69EF0F26) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-bg.building span {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 40px 50px;
+}
